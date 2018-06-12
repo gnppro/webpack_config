@@ -1,0 +1,9 @@
+body {
+  background: #333;
+  color: #fff; }
+
+.test {
+  border: 5px dashed orange;
+  padding: 10px;
+  background: red; }
+
