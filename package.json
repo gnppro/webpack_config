@@ -1,0 +1,25 @@
+{
+  "name": "webpack-sass-react",
+  "version": "1.0.0",
+  "description": "Configuración de Webpack para Sass EcmaScript y React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnppro/webpack_config.git"
+  },
+  "keywords": [
+    "WebPack",
+    "Sass",
+    "EcmaScript",
+    "React"
+  ],
+  "author": "Gerardo Nava Pereda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gnppro/webpack_config/issues"
+  },
+  "homepage": "https://github.com/gnppro/webpack_config#readme"
+}
