@@ -12,6 +12,10 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
+        use: [
+            MiniCssExtractPlugin.loader, 
+            "css-loader"
+          ]
         // use: [
         //   { loader: "style-loader" }, // Agrega el css al DOM en un <style>
         //   { loader: "css-loader" }, // Interpreta los archivos css en js via import
@@ -21,10 +25,13 @@ module.exports = {
         //    fallback: "style-loader",
         //    use: "css-loader"
         //  })
-        use: [
-          MiniCssExtractPlugin.loader, 
-          "css-loader"
-        ]
+      },
+      {
+        test: /\.scss$/,
+        use: MiniCssExtractPlugin.loader({
+          fallback: "style-loader",
+          use: ["css-loader", "sass-loader"]
+        })
       }
     ]
   },
