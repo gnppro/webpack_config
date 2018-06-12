@@ -14,8 +14,13 @@ module.exports = {
         test: /\.css$/,
         // use: [
         //   { loader: "style-loader" }, // Agrega el css al DOM en un <style>
-        //   { loader: "css-loader" }, // interpreta los archivos css en js via import
+        //   { loader: "css-loader" }, // Interpreta los archivos css en js via import
         // ]
+        //
+        //use: ExtractTextPlugin.extract({
+        //    fallback: "style-loader",
+        //    use: "css-loader"
+        //  })
         use: [
           MiniCssExtractPlugin.loader, 
           "css-loader"
