@@ -1,3 +1,3 @@
 import '../scss/main.scss';
 
-document.write("HOLA DESDE WEBPACK SASS")
+document.write("HOLA DESDE WEBPACK SASS + -- --watch")
