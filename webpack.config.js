@@ -7,6 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/bundle.js',
+    publicPath: "./dist/",
   },
   module: {
     rules: [
@@ -44,7 +45,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['babel-preset-env']
+            presets: ['babel-preset-env', 'react']
           }
         }
       },
@@ -55,6 +56,32 @@ module.exports = {
             loader: 'url-loader',
             options: {
               limit: 100000
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(mp4)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 100000,
+              mimetype: "video/mp4",
+              name: 'videos/[name].[hash].[ext]'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(webm)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 100000,
+              mimetype: "video/webm",
+              name: 'videos/[name].[hash].[ext]'
             }
           }
         ]
