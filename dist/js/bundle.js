@@ -90,11 +90,23 @@
 /*!*************************!*\
   !*** ./src/js/index.js ***!
   \*************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\ndocument.write(\"HOLA DESDE WEBPACK SASS + -- --watch\")\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("\n\n__webpack_require__(/*! ../scss/main.scss */ \"./src/scss/main.scss\");\n\nvar _message = __webpack_require__(/*! ./message.js */ \"./src/js/message.js\");\n\ndocument.write(\"HOLA DESDE WEBPACK SASS + BABEL + Images + Fonts\");\n\ndocument.write(\"<br/>\", _message.firstMessage);\n\n//# sourceURL=webpack:///./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/message.js":
+/*!***************************!*\
+  !*** ./src/js/message.js ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nmodule.exports = {\n    firstMessage: 'Hola Mundo desde un múdulo'\n};\n\n//# sourceURL=webpack:///./src/js/message.js?");
 
 /***/ }),
 
